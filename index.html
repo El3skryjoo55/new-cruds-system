@@ -23,20 +23,116 @@
 
         <!-- inputs numbers all  -->
         <div class="input">
-            <input type="text" id="title" placeholder="Title" style="margin: 4px;">
+            <input type="text" id="title" placeholder="Title" style="margin-top: 4px;">
             <div class="numbers">
-                <input type="number" id="price" placeholder="Price" style="margin: 4px;">
-                <input type="number" id="taxes" placeholder="Taxes" style="margin: 4px;">
-                <input type="number" id="ads" placeholder="Ads" style="margin: 4px;">
-                <input type="number" id="discount" placeholder="Discount" style="margin: 4px;">
-                <small id="total">786</small>
+                <input type="number" onkeyup="gettotal()" id="price" placeholder="Price" style="margin: 5px;">
+                <input type="number" id="taxes" onkeyup="gettotal()" placeholder="Taxes" style="margin: 5px;">
+                <input type="number" id="ads" onkeyup="gettotal()" placeholder="Ads" style="margin: 5px;">
+                <input type="number" id="discount" onkeyup="gettotal()" placeholder="Discount" style="margin: 5px;">
+                <small id="total"></small>
             </div>
-            <input type="number" placeholder="Count" id="count" style="margin: 4px;">
+            <input type="number" placeholder="Count" id="count" style="margin: 5px;">
             <input type="text" placeholder="Category" id="category" style="margin: 4px;">
-            <button type="submit">Create</button>
+            <button type="submit" style="margin-top: 5px;" id="submit">Create</button>
         </div>
+
         <!-- outputs all  -->
-        <div class="output"></div>
+
+        <div class="output">
+            <div class="searchBlock">
+                <input type="text" id="search" placeholder="Search" style="margin-top: 10px;">
+            </div>
+            <div class="btnsearch">
+                <button id="searchtitle" style="margin: 7px;">Search By Title</button>
+                <button id="searchcategory" style="margin: 7px;">Search By Category</button>
+            </div>
+            <!-- tr is vertical show  -->
+             <!-- And th is a horizontal  -->
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>TITLE</th>
+                    <th>PRICE</th>
+                    <th>TAXES</th>
+                    <th>ADS</th>
+                    <th>DISCOUNT</th>
+                    <th>TOTAL</th>
+                    <th>CATEGORY</th>
+                    <th>UPDATE</th>
+                    <th>DELETE</th>
+                </tr>
+                
+                <!-- dont forget to add the border        <tr> -->
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>realme</td>
+                        <td>3434</td>
+                        <td>3434</td>
+                        <td>343</td>
+                        <td>34</td>
+                        <td>3433</td>
+                        <td>phone</td>
+                        <td><button id="update">Update</button></td>
+                        <td><button id="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>realme</td>
+                        <td>3434</td>
+                        <td>3434</td>
+                        <td>343</td>
+                        <td>34</td>
+                        <td>3433</td>
+                        <td>phone</td>
+                        <td><button id="update">Update</button></td>
+                        <td><button id="delete">Delete</button></td>
+                    </tr>
+             <!-- dont forget to add the border        <tr> -->
+                        <td>3</td>
+                        <td>realme</td>
+                        <td>3434</td>
+                        <td>3434</td>
+                        <td>343</td>
+                        <td>34</td>
+                        <td>3433</td>
+                        <td>phone</td>
+                        <td><button id="update">Update</button></td>
+                        <td><button id="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>realme</td>
+                        <td>3434</td>
+                        <td>3434</td>
+                        <td>343</td>
+                        <td>34</td>
+                        <td>3433</td>
+                        <td>phone</td>
+                        <td><button id="update">Update</button></td>
+                        <td><button id="delete">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>realme</td>
+                        <td>3434</td>
+                        <td>3434</td>
+                        <td>343</td>
+                        <td>34</td>
+                        <td>3433</td>
+                        <td>phone</td>
+                        <td><button id="update">Update</button></td>
+                        <td><button id="delete">Delete</button></td>
+                    </tr>
+             <!-- dont forget to add the border        <tr> -->
+                </tbody>
+
+            </table>
+        </div>
+
+
+
+
         <div class="footer"></div>
     </div>
 
